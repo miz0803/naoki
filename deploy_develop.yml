@@ -1,0 +1,5 @@
+---
+- name: deloy to develop
+  host: unyo_kanri_develop
+  roles: 
+    - transfer_files

@@ -1,0 +1,13 @@
+host_key:
+  - host_abc
+  - host_def
+
+file_map:
+  host_abc:
+    - { src: files/host_abc/xxx.sh, dest: /srv/host_abc/program/main/infra/batch/bin/xxx.sh, group: infra, owner: infra, permit: 0755 }
+    - { src: files/host_abc/yyy.sh, dest: /srv/host_abc/program/main/infra/batch/bin/yyy.sh, group: infra, owner: infra, permit: 0755  }
+
+  host_def:
+    - { src: files/host_def/xxx.sh, dest: /srv/host_def/program/main/infra/batch/bin/xxx.sh, group: infra, owner: infra, permit: 0755  }
+    - { src: files/host_def/zzz.sh, dest: /srv/host_def/program/main/infra/batch/bin/zzz.sh, group: infra, owner: infra, permit: 0755  }
+

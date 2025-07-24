@@ -1,0 +1,12 @@
+host_key:
+  - host_a
+  - host_b
+
+file_map:
+  host_a:
+    - { src: files/host_a/xxx.sh, dest: /srv/host_a/program/main/infra/batch/bin/xxx.sh, group: infra, owner: infra, mode: 0755 }
+    - { src: files/host_a/yyy.sh, dest: /srv/host_a/program/main/infra/batch/bin/yyy.sh, group: infra, owner: infra, mode: 0755  }
+
+  host_b:
+    - { src: files/host_b/xxx.sh, dest: /srv/host_b/program/main/infra/batch/bin/xxx.sh, group: infra, owner: infra, mode: 0755  }
+    - { src: files/host_b/zzz.sh, dest: /srv/host_b/program/main/infra/batch/bin/zzz.sh, group: infra, owner: infra, mode: 0755  }

@@ -1,0 +1,5 @@
+---
+- name: deloy to pre production
+  host: unyo_kanri_pre
+  roles: 
+    - transfer_files

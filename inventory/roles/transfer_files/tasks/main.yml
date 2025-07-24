@@ -1,0 +1,17 @@
+---
+- name: include environmnt variable files
+  include_vars: "{{ env_dir }}.yml"
+
+- name: transfer 
+  copy:
+    src: "{{ item.src }}"
+    dest: "{{ item.dest }}"
+    owner: "{{ item.owner }}"
+    group: "{{ item.group }}"
+    mode: "{{ item.mode }}"
+  loop: >
+    {{
+      host_key
+      | map('extract', file_map)
+      | flatten
+    }}
