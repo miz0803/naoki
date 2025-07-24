@@ -19,7 +19,7 @@
 - 環境毎に用意しています。
 - `host_keys`は、配布先となるサーバのバリエーション分記載が必要です。面倒ですが。
 - `file_map`配布先のサーバ（パス）とfrom・toをマッピングした変数リストです
-- 例えばhostは、`files/host_a/xxx.sh`を運用管理サーバの`/srv/host_a/program/main/infra/batch/bin/xxx.sh`に配備します。この時Ansibleの仕様で変更が加えられていない場合、処理は行われません（`ok`となります）
+- 例えばhost_aは、Git上の`files/host_a/xxx.sh`を運用管理サーバの`/srv/host_a/program/main/infra/batch/bin/xxx.sh`に配備します。この時Ansibleの仕様で変更が加えられていない場合、処理は行われません（`ok`となります）
 - 面倒ですが、サーバ分`filemap.サーバ名`のリストを用意する必要があります。
 
 ## Playbook
